@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+  }
+  
+  .app {
+    max-width: 1280px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .card:hover{
+    background: rgb(166, 224, 224);
+  }
+  
+  .card h2 {
+    color: #2c3e50;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  .card p {
+    color: #7f8c8d;
+  }
+  
+  .selftext {
+    margin-top: 10px;
+    color: #2d3436;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 100%; 
+    overflow: hidden; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 7; 
+    -webkit-box-orient: vertical; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-size: 50px; 
+    color: #2d3436; 
+    background-color: #f5f5f5; 
+}
